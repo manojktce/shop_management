@@ -28,7 +28,14 @@
                         <div class="col-xl-5 col-xxl-4">
                             <div class="authentication-login min-vh-100 bg-body row justify-content-center align-items-center p-4">
                                 <div class="auth-max-width col-sm-8 col-md-6 col-xl-7 px-4">
-                                    <h2 class="mb-1 fs-7 fw-bolder">Welcome to {{ config('app.name') }}</h2>
+                                    <div class="text-center mb-4">
+                                        <img
+                                            src="{{ url('assets/backend/images/logos/logo.png') }}"
+                                            alt="{{ config('app.name') }}"
+                                            class="img-fluid"
+                                            style="max-width: 220px; width: 100%; height: auto;"
+                                        >
+                                    </div>
                                     {{ $slot }}
                                 </div>
                             </div>

@@ -8,9 +8,9 @@
                     </a>
                 </li>
             </ul>
-            <div class="d-block d-lg-none py-4">
-                <a href="javascript:void(0)" class="text-nowrap logo-img">
-                    <img src="{{ url('assets/backend/images/logos/logo.png') }}" alt="logo" width="145"/>
+            <div class="d-block d-lg-none py-3 ms-2">
+                <a href="{{ baseURL('dashboard') }}" class="text-nowrap logo-img text-white text-decoration-none fw-semibold">
+                    {{ config('app.name') }}
                 </a>
             </div>
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">

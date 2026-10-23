@@ -1,5 +1,6 @@
 body{
     background: #F3F5F7;
+    overflow-x: hidden;
 }
 
 .body-wrapper {
@@ -68,4 +69,128 @@ div.dataTables_wrapper div.dataTables_paginate{
     font-size: 10px;
     color: red;
     margin: 2px 0;
+}
+
+/* --- Mobile-first foundation (Module 02) --- */
+
+.container-fluid {
+    max-width: 100%;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.alert,
+.swal2-container {
+    max-width: 100%;
+}
+
+/* Isolate wide tables; avoid page-level horizontal scroll */
+.table-responsive,
+div.dataTables_wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Shared sticky action bar (POS / form footers later) */
+.mobile-action-bar {
+    position: sticky;
+    bottom: 0;
+    z-index: 20;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    padding: 0.75rem 0;
+    background: rgba(243, 245, 247, 0.96);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 575.98px) {
+    .body-wrapper {
+        padding-top: 64px;
+    }
+
+    .body-wrapper > .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    /* Touch-friendly controls */
+    .btn {
+        min-height: 44px;
+        padding-top: 0.55rem;
+        padding-bottom: 0.55rem;
+    }
+
+    .datatable-icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+    }
+
+    .datatable-icons a {
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0 !important;
+    }
+
+    .form-control,
+    .form-select {
+        min-height: 44px;
+        font-size: 16px; /* reduces iOS zoom on focus */
+    }
+
+    /* Stack DataTables length/filter on narrow screens */
+    div.dataTables_wrapper div.dataTables_length,
+    div.dataTables_wrapper div.dataTables_filter {
+        text-align: left !important;
+        float: none !important;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter input {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    div.dataTables_wrapper div.dataTables_info,
+    div.dataTables_wrapper div.dataTables_paginate {
+        width: 100%;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        margin-top: 0.5rem;
+    }
+
+    .page-breadcrumb,
+    .breadcrumb {
+        flex-wrap: wrap;
+        row-gap: 0.25rem;
+    }
+
+    .authentication-login .auth-max-width {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mobile-action-bar {
+        margin-left: -12px;
+        margin-right: -12px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .mobile-action-bar .btn {
+        flex: 1 1 auto;
+    }
 }

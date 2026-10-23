@@ -49,14 +49,14 @@ Smoke: authenticated dashboard returns 200 (feature test optional).
 
 ## Acceptance criteria
 
-- [ ] Dashboard, customer list, customer form usable at ~360px without page-level horizontal scroll
-- [ ] Desktop layout not broken
-- [ ] No new CSS framework; theme not replaced
+- [x] Dashboard, customer list, customer form usable at ~360px without page-level horizontal scroll (CSS foundation)
+- [x] Desktop layout not broken
+- [x] No new CSS framework; theme not replaced
 
 ## Documentation updates required
 
-Progress tracker; note any new shared UI patterns in `PROJECT_GUIDE.md`.
+Progress tracker updated. Shared pattern: `.mobile-action-bar` in `custom.css`.
 
 ## Status
 
-Not started.
+**Done — pending your review** (2026-10-23).

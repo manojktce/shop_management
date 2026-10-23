@@ -5,7 +5,7 @@ Last updated: 2026-10-23
 | # | Module | Status | Notes |
 |---|--------|--------|--------|
 | 01 | Boilerplate review & conventions | **Done (docs/rules)** | Cursor rules + planning docs created; no code changes to app |
-| 02 | Foundation / mobile-first layout | Not started | |
+| 02 | Foundation / mobile-first layout | **Done — pending review** | custom.css mobile rules; header app name; tests green |
 | 03 | Categories & units | Not started | |
 | 04 | Products & product types | Not started | |
 | 05 | Variants & pricing | Not started | |
@@ -28,3 +28,4 @@ Last updated: 2026-10-23
 |------|------|---------|
 | 2026-10-23 | Inspect repo; add `.cursor/rules/*.mdc` and `docs/*` | Waiting for review; no shop modules implemented |
 | 2026-10-23 | Lock business decisions | Separate customers; type enum; no neg stock; bill GST; INR 2dp; PHP 8.3 |
+| 2026-10-23 | Basic setup + Module 02 | Seeded DB; mobile CSS; foundation tests; phpunit → MySQL test DB |
