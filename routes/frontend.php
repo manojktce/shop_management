@@ -2,6 +2,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Frontend\HomeController;
-
-Route::get('/', [HomeController::class, 'index']);
+Route::redirect('/', env('ADMIN_PATH', 'webadmin'));

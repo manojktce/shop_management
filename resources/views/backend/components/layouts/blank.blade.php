@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sumanas Admin Panel</title>
+        <title>{{ config('app.name') }}</title>
 
         <link rel="shortcut icon" type="image/png" href="{{ url('assets/backend/images/logos/favicon.png') }}" />
         <link rel="stylesheet" href="{{ url('assets/backend/css/styles.css') }}" />
@@ -16,19 +16,19 @@
         <div id="main-wrapper" class="auth-customizer-none">
             <div class="position-relative overflow-hidden radial-gradient min-vh-100 w-100">
                 <div class="position-relative z-index-5">
-                    <div class="row">
-                        <div class="col-xl-7 col-xxl-8">
-                            <a href="javascript:void(0)" class="text-nowrap logo-img d-block px-4 py-9 w-100">
-                                <!-- <img src="{{ url('assets/backend/images/logos/logo.png') }}" alt="logo" /> -->
-                            </a>
-                            <div class="d-none d-xl-flex align-items-center justify-content-center h-n80">
-                                <img src="{{ url('assets/backend/images/backgrounds/login-security.svg') }}" alt="" class="img-fluid" width="500">
-                            </div>
+                    <div class="row g-0">
+                        <div class="col-xl-7 col-xxl-8 d-none d-xl-block">
+                            <div
+                                class="min-vh-100 w-100"
+                                role="img"
+                                aria-label="Grocery shop shelves with everyday essentials"
+                                style="background: url('{{ url('assets/frontend/images/grocery-banner.jpg') }}') center / cover no-repeat;"
+                            ></div>
                         </div>
                         <div class="col-xl-5 col-xxl-4">
                             <div class="authentication-login min-vh-100 bg-body row justify-content-center align-items-center p-4">
                                 <div class="auth-max-width col-sm-8 col-md-6 col-xl-7 px-4">
-                                    <h2 class="mb-1 fs-7 fw-bolder">Welcome to Sumanas</h2>
+                                    <h2 class="mb-1 fs-7 fw-bolder">Welcome to {{ config('app.name') }}</h2>
                                     {{ $slot }}
                                 </div>
                             </div>

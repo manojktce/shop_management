@@ -10,7 +10,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sumanas Admin Panel</title>
+        <title>{{ config('app.name') }}</title>
 
         <link rel="shortcut icon" type="image/png" href="{{ url('assets/backend/images/logos/favicon.png') }}" />
         <link rel="stylesheet" href="{{ url('assets/backend/css/styles.css') }}" />
